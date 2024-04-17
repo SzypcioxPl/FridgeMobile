@@ -79,35 +79,33 @@
 
 Używając powyższych instrukcji, uczestnicy warsztatów będą mogli krok po kroku zbudować prostą aplikację interaktywną, która wprowadzi ich w świat programowania aplikacji mobilnych na Androida.
 
-## Zadanie 3: Debuggowanie z bez emulatora
-## Krok 1: Włączanie Opcji Programisty i Debugowania przez USB
-1. **Odblokuj opcje programisty**: Przejdź do `Ustawienia > O telefonie` i kliknij 7 razy w numer kompilacji, aby odblokować opcje programisty.
-2. **Włącz debugowanie przez USB**: Przejdź do `Ustawienia > Opcje programisty` i włącz `Debugowanie przez USB`.
+## Zadanie 3: Debuggowanie bez emulatora
 
-## Krok 2: Konfiguracja Android Studio
-1. Podłącz telefon do komputera za pomocą kabla USB.
-2. Otwórz Android Studio i załaduj swój projekt.
-3. Sprawdź, czy Android Studio wykrywa Twoje urządzenie. Po otwarciu projektu i podłączeniu telefonu powinno się pojawić okno dialogowe na telefonie z pytaniem, czy zezwolić na debugowanie USB z tego komputera. Zatwierdź to.
+**Cel:** Nauczenie się debugowania aplikacji Android bezpośrednio na fizycznym urządzeniu za pomocą połączenia USB lub WiFi.
 
-## Krok 3: Debugowanie Aplikacji przez USB
-1. Wybierz swoje urządzenie w menu rozwijanym w Android Studio (obok przycisku z zieloną strzałką).
-2. Uruchom aplikację w trybie debugowania, klikając zieloną strzałkę obok nazwy Twojego urządzenia lub naciskając `Shift + F10`.
-3. Użyj zakładek takich jak Logcat czy Debugger w Android Studio, aby obserwować logi i zmienne podczas działania aplikacji.
+### Kroki:
+1. **Włączenie opcji programisty i debugowania przez USB:**
+   - Na urządzeniu Android przejdź do `Ustawienia > O telefonie` i kliknij 7 razy w numer kompilacji, aby odblokować opcje programisty.
+   - Włącz `Debugowanie przez USB` w `Ustawienia > Opcje programisty`.
 
-## Krok 4: Konfiguracja Debugowania przez WiFi (opcjonalnie)
-1. Podłącz telefon do komputera przez USB i upewnij się, że debugowanie przez USB jest włączone.
-2. Otwórz terminal w Android Studio (`View > Tool Windows > Terminal`).
-3. Sprawdź połączenie urządzenia poleceniem:
-   ```bash
-   adb devices
-   ```
-4. Połącz się z urządzeniem przez WiFi wykonując:
-   ```bash
-   adb tcpip 5555
-   ```
-5. Odłącz urządzenie USB. Znajdź IP swojego urządzenia w `Ustawienia > O telefonie > Status > Adres IP`.
-6. Podłącz ponownie do urządzenia przez WiFi poleceniem:
-   ```bash
-   adb connect [IP_URZĄDZENIA]:5555
-   ```
-7. Powtórz kroki z sekcji 3, wybierając swoje urządzenie z listy dostępnych urządzeń w Android Studio.
+2. **Konfiguracja Android Studio:**
+   - Podłącz telefon do komputera za pomocą kabla USB.
+   - Otwórz Android Studio i załaduj swój projekt.
+   - Upewnij się, że Android Studio wykrywa Twoje urządzenie. Po podłączeniu telefonu powinno pojawić się okno dialogowe z pytaniem, czy zezwolić na debugowanie USB z tego komputera.
+
+3. **Debugowanie aplikacji przez USB:**
+   - Wybierz swoje urządzenie z listy dostępnych urządzeń w Android Studio (menu rozwijane obok przycisku z zieloną strzałką).
+   - Uruchom aplikację w trybie debugowania, klikając zieloną strzałkę obok nazwy Twojego urządzenia lub naciskając `Shift + F10`.
+   - Użyj narzędzi takich jak Logcat czy Debugger w Android Studio, aby śledzić logi i zmienne.
+
+4. **Konfiguracja debugowania przez WiFi (opcjonalnie):**
+   - W terminalu Android Studio (`View > Tool Windows > Terminal`) wykonaj polecenie `adb devices` aby sprawdzić połączenie.
+   - Przełącz urządzenie na połączenie przez WiFi za pomocą polecenia `adb tcpip 5555`.
+   - Odłącz urządzenie USB. Znajdź IP urządzenia w `Ustawienia > O telefonie > Status > Adres IP` i połącz z urządzeniem przez WiFi wykonując `adb connect [IP_URZĄDZENIA]:5555`.
+   - Powtórz kroki debugowania z użyciem połączenia WiFi.
+
+### Testowanie aplikacji:
+   - Po skonfigurowaniu urządzenia, uruchom aplikację w trybie debugowania, obserwując jak aplikacja zachowuje się na fizycznym urządzeniu.
+   - Sprawdź reakcje aplikacji na interakcje użytkownika i potencjalne błędy w działaniu.
+
+Używając powyższych kroków, uczestnicy warsztatów nauczą się podstaw debugowania aplikacji bezpośrednio na urządzeniach Android, co jest kluczowe do testowania funkcji związanych z hardware.
