@@ -1,6 +1,23 @@
 
 # Android Studio Java Workshop
 
+## Część Teoretyczna
+
+W tej sekcji znajdziesz linki do materiałów teoretycznych, które pomogą Ci zrozumieć podstawy oraz zaawansowane techniki używane podczas tworzenia aplikacji na Androida. Zawiera ona zarówno źródła zewnętrzne, jak i prezentacje przygotowane specjalnie na te warsztaty.
+
+### Źródła
+- [Dokumentacja Android Developer](https://developer.android.com/docs) - Oficjalna dokumentacja dla twórców aplikacji na Androida, zawierająca szczegółowe informacje na temat API, komponentów aplikacji, narzędzi i najlepszych praktyk.
+- [Java Fundamentals for Android Development](https://www.youtube.com/watch?v=fis26HvvDII&t=38425s&pp=ygUfYW5kcm9pZCBkZXZlbG9wbWVudCBmdWxsIGNvdXJzZQ%3D%3D) - Podstawy języka Java, niezbędne do pracy na Android Studio.
+
+### Prezentacja
+- [Link do naszej prezentacji](https://www.canva.com/design/DAGCTSXFJ_A/fRDTx5flctrrd0Pt1fJSpw/view?utm_content=DAGCTSXFJ_A&utm_campaign=designshare&utm_medium=link&utm_source=editor) - Zachęcamy do zajrzenia ponownie dla osób z ulotną pamięcią.
+### Dodatkowe Materiały
+- [Android Design Guidelines](https://material.io/design) - Wytyczne projektowania dla aplikacji Android, które pomagają tworzyć estetyczne i funkcjonalne interfejsy użytkownika.
+
+Zachęcamy do zapoznania się z tymi materiałami przed rozpoczęciem praktycznej części warsztatów.
+
+## Część Praktyczna
+
 ## Zadanie 1: Prosta aplikacja z przyciskiem
 
 **Cel:** Nauka podstaw interakcji z użytkownikiem poprzez przycisk i obsługę zdarzeń w języku Java.
@@ -108,4 +125,4 @@ Używając powyższych instrukcji, uczestnicy warsztatów będą mogli krok po k
    - Po skonfigurowaniu urządzenia, uruchom aplikację w trybie debugowania, obserwując jak aplikacja zachowuje się na fizycznym urządzeniu.
    - Sprawdź reakcje aplikacji na interakcje użytkownika i potencjalne błędy w działaniu.
 
-Używając powyższych kroków, uczestnicy warsztatów nauczą się podstaw debugowania aplikacji bezpośrednio na urządzeniach Android, co jest kluczowe do testowania funkcji związanych z hardware.
+
