@@ -1,7 +1,7 @@
 
 # Android Studio Java Workshop
 
-## Zadanie 2: Prosta aplikacja z przyciskiem
+## Zadanie 1: Prosta aplikacja z przyciskiem
 
 **Cel:** Nauka podstaw interakcji z użytkownikiem poprzez przycisk i obsługę zdarzeń w języku Java.
 
@@ -34,7 +34,7 @@
    - Kliknij 'Run' (zielony trójkąt) w Android Studio, aby uruchomić aplikację.
    - Kiedy aplikacja się uruchomi, kliknij przycisk i obserwuj pojawiający się komunikat Toast.
 
-## Zadanie 3: Aplikacja z prostym formularzem
+## Zadanie 2: Aplikacja z prostym formularzem
 
 **Cel:** Nauczenie podstawowych elementów interfejsu użytkownika oraz gromadzenie danych wejściowych.
 
