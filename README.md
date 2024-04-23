@@ -93,7 +93,7 @@ Zachęcamy do zapoznania się z tymi materiałami przed rozpoczęciem praktyczne
    });
    ```
 
-3. **Testowanie aplikacji:**
+3. **Testowanie aplikacji:(Dodatkowe)**
    - Ponownie uruchom aplikację i przetestuj działanie formularza wpisując swoje imię i klikając przycisk powitania.
 
 4. **Jako wykonanie zadania prześlij zrzut ekranu na UPELu gdzie na ekratnie aplikacja wyświetli po wpisaniu w pole tekstowe twój numer indeksu**
