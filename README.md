@@ -1,6 +1,23 @@
 
 # Android Studio Java Workshop
 
+## Część Teoretyczna
+
+W tej sekcji znajdziesz linki do materiałów teoretycznych, które pomogą Ci zrozumieć podstawy oraz zaawansowane techniki używane podczas tworzenia aplikacji na Androida. Zawiera ona zarówno źródła zewnętrzne, jak i prezentacje przygotowane specjalnie na te warsztaty.
+
+### Źródła
+- [Dokumentacja Android Developer](https://developer.android.com/docs) - Oficjalna dokumentacja dla twórców aplikacji na Androida, zawierająca szczegółowe informacje na temat API, komponentów aplikacji, narzędzi i najlepszych praktyk.
+- [Java Fundamentals for Android Development](https://www.youtube.com/watch?v=fis26HvvDII&t=38425s&pp=ygUfYW5kcm9pZCBkZXZlbG9wbWVudCBmdWxsIGNvdXJzZQ%3D%3D) - Podstawy języka Java, niezbędne do pracy na Android Studio.
+
+### Prezentacja
+- [Link do naszej prezentacji](https://www.canva.com/design/DAGCTSXFJ_A/fRDTx5flctrrd0Pt1fJSpw/view?utm_content=DAGCTSXFJ_A&utm_campaign=designshare&utm_medium=link&utm_source=editor) - Zachęcamy do zajrzenia ponownie dla osób z ulotną pamięcią.
+### Dodatkowe Materiały
+- [Android Design Guidelines](https://material.io/design) - Wytyczne projektowania dla aplikacji Android, które pomagają tworzyć estetyczne i funkcjonalne interfejsy użytkownika.
+
+Zachęcamy do zapoznania się z tymi materiałami przed rozpoczęciem praktycznej części warsztatów.
+
+## Część Praktyczna
+
 ## Zadanie 1: Prosta aplikacja z przyciskiem
 
 **Cel:** Nauka podstaw interakcji z użytkownikiem poprzez przycisk i obsługę zdarzeń w języku Java.
@@ -78,3 +95,34 @@
    - Ponownie uruchom aplikację i przetestuj działanie formularza wpisując swoje imię i klikając przycisk powitania.
 
 Używając powyższych instrukcji, uczestnicy warsztatów będą mogli krok po kroku zbudować prostą aplikację interaktywną, która wprowadzi ich w świat programowania aplikacji mobilnych na Androida.
+
+## Zadanie 3: Debuggowanie bez emulatora
+
+**Cel:** Nauczenie się debugowania aplikacji Android bezpośrednio na fizycznym urządzeniu za pomocą połączenia USB lub WiFi.
+
+### Kroki:
+1. **Włączenie opcji programisty i debugowania przez USB:**
+   - Na urządzeniu Android przejdź do `Ustawienia > O telefonie` i kliknij 7 razy w numer kompilacji, aby odblokować opcje programisty.
+   - Włącz `Debugowanie przez USB` w `Ustawienia > Opcje programisty`.
+
+2. **Konfiguracja Android Studio:**
+   - Podłącz telefon do komputera za pomocą kabla USB.
+   - Otwórz Android Studio i załaduj swój projekt.
+   - Upewnij się, że Android Studio wykrywa Twoje urządzenie. Po podłączeniu telefonu powinno pojawić się okno dialogowe z pytaniem, czy zezwolić na debugowanie USB z tego komputera.
+
+3. **Debugowanie aplikacji przez USB:**
+   - Wybierz swoje urządzenie z listy dostępnych urządzeń w Android Studio (menu rozwijane obok przycisku z zieloną strzałką).
+   - Uruchom aplikację w trybie debugowania, klikając zieloną strzałkę obok nazwy Twojego urządzenia lub naciskając `Shift + F10`.
+   - Użyj narzędzi takich jak Logcat czy Debugger w Android Studio, aby śledzić logi i zmienne.
+
+4. **Konfiguracja debugowania przez WiFi (opcjonalnie):**
+   - W terminalu Android Studio (`View > Tool Windows > Terminal`) wykonaj polecenie `adb devices` aby sprawdzić połączenie.
+   - Przełącz urządzenie na połączenie przez WiFi za pomocą polecenia `adb tcpip 5555`.
+   - Odłącz urządzenie USB. Znajdź IP urządzenia w `Ustawienia > O telefonie > Status > Adres IP` i połącz z urządzeniem przez WiFi wykonując `adb connect [IP_URZĄDZENIA]:5555`.
+   - Powtórz kroki debugowania z użyciem połączenia WiFi.
+
+### Testowanie aplikacji:
+   - Po skonfigurowaniu urządzenia, uruchom aplikację w trybie debugowania, obserwując jak aplikacja zachowuje się na fizycznym urządzeniu.
+   - Sprawdź reakcje aplikacji na interakcje użytkownika i potencjalne błędy w działaniu.
+
+
