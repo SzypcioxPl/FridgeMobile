@@ -1,6 +1,8 @@
 package com.example.fridgemobile;
 
 import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
 
@@ -19,12 +21,16 @@ public class IngredientAdapter extends RecyclerView.Adapter<IngredientAdapter.Vi
         this.context = context;
         this.ingredients = ingredients;
     }
+    public void clearSelections() {
+        selectedIngredients.clear();
+        notifyDataSetChanged(); // Powiadom adapter o zmianie, aby odświeżyć widok
+    }
+
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        CheckBox cb = new CheckBox(context);
-        cb.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
-        return new ViewHolder(cb);
+        View view = LayoutInflater.from(context).inflate(R.layout.item_ingredient, parent, false);
+        return new ViewHolder(view);
     }
 
     @Override
@@ -53,9 +59,9 @@ public class IngredientAdapter extends RecyclerView.Adapter<IngredientAdapter.Vi
     static class ViewHolder extends RecyclerView.ViewHolder {
         CheckBox checkBox;
 
-        ViewHolder(CheckBox checkBox) {
-            super(checkBox);
-            this.checkBox = checkBox;
+        ViewHolder(View itemView) {
+            super(itemView);
+            checkBox = itemView.findViewById(R.id.checkbox_ingredient);
         }
     }
 }
