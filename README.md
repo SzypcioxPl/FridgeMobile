@@ -31,7 +31,7 @@ Zachęcamy do zapoznania się z tymi materiałami przed rozpoczęciem praktyczne
        android:id="@+id/button_toast"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:text="Pokaż Toast" />
+       android:text="Twoje imie i Nazwisko" />
    ```
 
 2. **Ustawienie OnClickListener:**
@@ -50,6 +50,8 @@ Zachęcamy do zapoznania się z tymi materiałami przed rozpoczęciem praktyczne
 3. **Uruchomienie aplikacji:**
    - Kliknij 'Run' (zielony trójkąt) w Android Studio, aby uruchomić aplikację.
    - Kiedy aplikacja się uruchomi, kliknij przycisk i obserwuj pojawiający się komunikat Toast.
+  
+4. **Jako wykonanie zadania prześlij zrzut ekranu na UPELu z przyciskiem wyświetlającym twoje imię i nazwisko**
 
 ## Zadanie 2: Aplikacja z prostym formularzem
 
@@ -81,7 +83,7 @@ Zachęcamy do zapoznania się z tymi materiałami przed rozpoczęciem praktyczne
    greetButton.setOnClickListener(new View.OnClickListener() {
        @Override
        public void onClick(View v) {
-           String name = nameInput.getText().toString();
+           String name = ###################### // tu wpisz brakującą część kodu
            if (!name.isEmpty()) {
                Toast.makeText(MainActivity.this, "Witaj, " + name + "!", Toast.LENGTH_SHORT).show();
            } else {
@@ -94,7 +96,7 @@ Zachęcamy do zapoznania się z tymi materiałami przed rozpoczęciem praktyczne
 3. **Testowanie aplikacji:**
    - Ponownie uruchom aplikację i przetestuj działanie formularza wpisując swoje imię i klikając przycisk powitania.
 
-Używając powyższych instrukcji, uczestnicy warsztatów będą mogli krok po kroku zbudować prostą aplikację interaktywną, która wprowadzi ich w świat programowania aplikacji mobilnych na Androida.
+4. **Jako wykonanie zadania prześlij zrzut ekranu na UPELu gdzie na ekratnie aplikacja wyświetli po wpisaniu w pole tekstowe twój numer indeksu**
 
 ## Zadanie 3: Debuggowanie bez emulatora
 
